@@ -17,6 +17,8 @@ enum {
 var state = MOVE
 var velocity = Vector2.ZERO
 
+onready var animationPlayer = $AnimationPlayer
+
 func _ready():
 	screen_size = get_viewport_rect().size
 	
@@ -42,9 +44,10 @@ func move_state(delta):
 	
 	if input_vector != Vector2.ZERO:
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, delta * ACCELERATION)
+		animationPlayer.play("RunRight")
 	else:
-		# idle
 		velocity = velocity.move_toward(Vector2.ZERO, delta * FRICTION)
+		animationPlayer.play("Idle")
 	
 	move()
 	
