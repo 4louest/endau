@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.0875, 3.97607 )
+
+[node name="robot" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -4.96094, -10.3943 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 7, 147, 24, 29 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0319977, 0.0934982 )
+shape = SubResource( 1 )
