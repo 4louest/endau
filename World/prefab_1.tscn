@@ -5,11 +5,11 @@
 [node name="prefab_1" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -1.88775, -7.55099 )
+position = Vector2( -1.95449, -5.01479 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 183, 230, 66, 22 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -1.88775, -7.55099 )
-polygon = PoolVector2Array( -18.0693, 10.1537, 27.2367, 10.2716, 33.0179, 5.90623, -11.2262, 5.67026 )
+position = Vector2( -2.02123, -4.88131 )
+polygon = PoolVector2Array( -18.0693, 10.1537, 27.2367, 10.2716, 33.7904, 4.81057, -18.0014, 4.94406 )
